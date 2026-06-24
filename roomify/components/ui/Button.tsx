@@ -60,6 +60,15 @@ const buttonStyles = `
     border-color: #9ca3af;
   }
 
+  .btn--amber {
+    background-color: oklch(0.7 0.19 47.6);
+    color: white;
+  }
+
+  .btn--amber:hover {
+    background-color: oklch(0.6 0.19 47.6);
+  }
+
   .btn--sm {
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
@@ -81,7 +90,7 @@ const buttonStyles = `
 `;
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'danger' | 'ghost' | 'outline';
+  variant?: 'primary' | 'secondary' | 'danger' | 'ghost' | 'outline' | 'amber';
   size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
 }

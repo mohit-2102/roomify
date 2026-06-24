@@ -9,9 +9,9 @@ const Navbar = () => {
 
   const handleAuthClick = async () => {
     if (isSignedIn) {
-      try{
+      try {
         await signOut();
-      } catch(e) {
+      } catch (e) {
         console.error('Error signing out:', e);
       }
 
@@ -21,7 +21,7 @@ const Navbar = () => {
     try {
       await signIn()
     } catch (e) {
-      console.error('Error signing in:', e);  
+      console.error('Error signing in:', e);
     }
   }
 
@@ -47,24 +47,24 @@ const Navbar = () => {
               <span className='greeting'>
                 {userName ? `Hi, ${userName}` : 'Hi, User'}
               </span>
-              <Button size='sm' onClick={handleAuthClick} className='btn'>
-              Log Out
+              <Button size='sm' onClick={handleAuthClick} className='btn' variant="amber">
+                Log Out
               </Button>
             </>
 
-          ): (
-              <>
-              <Button size='sm' onClick = { handleAuthClick }  variant='ghost'>
-              LogIn
-            </Button>
-            <a href="#upload" className='cta'>
-            Get Started
-            </a>
-      </>
-      )
+          ) : (
+            <>
+              <Button size='sm' onClick={handleAuthClick} variant='ghost'>
+                LogIn
+              </Button>
+              <a href="#upload" className='cta'>
+                Get Started
+              </a>
+            </>
+          )
           }
-    </div>
-    </nav >
+        </div>
+      </nav >
 
     </header >
   )

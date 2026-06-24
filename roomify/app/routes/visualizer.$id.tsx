@@ -1,6 +1,6 @@
 import React from 'react'
 
-const visualizerId = () => {
+const VisualizerId = () => {
   return (
     <div>
       Visualize
@@ -8,4 +8,4 @@ const visualizerId = () => {
   )
 }
 
-export default visualizerId
+export default VisualizerId;

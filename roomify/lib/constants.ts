@@ -21,6 +21,12 @@ export const GRID_COLOR = "#3B82F6";
 // HTTP Status Codes
 export const UNAUTHORIZED_STATUSES = [401, 403];
 
+// File Upload Constants
+export const MAX_FILE_SIZE_MB = 50;
+export const MAX_FILE_SIZE_BYTES = MAX_FILE_SIZE_MB * 1024 * 1024;
+export const ALLOWED_FILE_TYPES = ['image/jpeg', 'image/png'];
+export const ALLOWED_FILE_EXTENSIONS = ['.jpg', '.jpeg', '.png'];
+
 // Image Dimensions
 export const IMAGE_RENDER_DIMENSION = 1024;
 

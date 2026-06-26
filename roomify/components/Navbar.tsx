@@ -8,6 +8,9 @@ const Navbar = () => {
   const { isSignedIn, userName, signOut, signIn } = useOutletContext<AuthContext>()
 
   const handleAuthClick = async () => {
+
+      console.log("Button clicked");
+
     if (isSignedIn) {
       try {
         await signOut();
